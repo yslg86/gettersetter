@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>회원가입 이용약관 페이지</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+	.container-fluid{max-width:100%}
+	#row1{height:80px;  }
+	#profile{position:absolute; right:5%; top:20%;}
+	#logo{position:absolute; left:0%; }
+	/* 여기까지가 상단 로고와 프로필 */
+	body{font-family: 'Montserrat', sans-serif;font-size:1em; }
+	.list-group{width:40%; height:auto; margin-left:30%}
+	#title{font-weight:bold ; font-size:45pt; text-align:center; padding-top:2%  }
+	.list-group input{border-style:inherit;}
+	
+	#login{width:100%; margin-top:5%; float:left; margin-left:22%}
+	#facebook{background:#3C5A96;  height:70px; margin-right:4%;   }
+	#naver{background:#32C634;   height:70px;margin-right:4%; }
+	#kakao{background:#FEE934;  height:70px;margin-right:4%; }
+</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row" id="row1" >
+		<div class="col-sm-12">
+		<img src="img/logo.jpg" style=width:300px;height:80px; id="logo">
+		<img src="img/profile.jpg" style=width:50px;height:50px; id="profile"></div>
+		
+	</div>
+	<hr/> <!--  여기까지가 상단 로고와 프로필  -->
+	
+	<div class="row">
+	<div id="title" class="col-sm-12">Welcome to gettersetter!</div>
+	</div>
+	<div class="list-group" style="margin-top:2%">
+		ID<input type="text" class="list-group-item-info" placeholder="Insert ID" >
+		PASSWORD<input type="password" class="list-group-item-info"  placeholder="Insert Password" >
+		PASSWORD-CHECK<input type="password" class="list-group-item-info" placeholder="Insert Password Again">
+		E-MAIL<input type="text" class="list-group-item-info" placeholder="Insert E-mail" >
+		TEL<input type="text"class="list-group-item-info" placeholder="Insert Tel">
+		<button class="btn btn-info" style="margin-top:20px;padding:20px 0;font-size:20pt">Sign Out</button>
+		
+		<form  class="form-inline" method="post" action="login2.jsp" onsubmit="" name="" id="">
+			<div id="login" class="form-group">
+				<button id="facebook" class="form-control"><img src="img/facebook.jpg"/>Login</button>
+				<button id="naver" class="form-control"><img src="img/naver.jpg"/>Login</button>
+				<button id="kakao" class="form-control"><img src="img/kakao.jpg"/>Login</button>
+			</div>
+		</form>
+	</div>
+	<hr/>
+	
+</div>
+</body>
+</html>
